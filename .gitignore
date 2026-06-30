@@ -1,0 +1,11 @@
+# Executable files
+*.exe
+
+# Object files
+*.o
+
+# Runtime data
+candidates.txt
+voters.txt
+votes.txt
+
