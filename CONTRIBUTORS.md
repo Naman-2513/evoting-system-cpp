@@ -1,7 +1,7 @@
 This project was developed as part of the Open Source Development (OSD) coursework.
 
 | Naman Rana |   Project structure setup (`src/` folder, `include/` folder), `.gitignore`, `LICENSE`, voter module     |
-| Mudit      |   Admin panel, vote encryption/decryption logic                                                         |
+| Mudit      |   Admin panel, vote encryption/decryption logic , Architecture building                                 |
 | Ritvik     |   Admin panel, vote encryption/decryption logic                                                         |
 | Veer       |   Project documentation (README, CONTRIBUTING, CHANGELOG)                                               |
 | Harshit    |   Project documentation (README, CONTRIBUTING, CHANGELOG)                                               |
