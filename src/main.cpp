@@ -1,6 +1,7 @@
 #include "candidate.h"
 #include "voter.h"
 #include "vote.h"
+#include "admin.h"      
 #include "utils.h"
 #include <iostream>
 using namespace std;
@@ -11,7 +12,7 @@ int main() {
 
     int choice;
     while (true) {
-        cout << BOLD << "  ======================================\n" << RESET;
+         cout << BOLD << "  ======================================\n" << RESET;
         cout << "  1.  Register Voter\n";
         cout << "  2.  Cast Vote\n";
         cout << "  3.  View Candidates\n";
@@ -41,3 +42,4 @@ int main() {
         }
     }
 }
+    

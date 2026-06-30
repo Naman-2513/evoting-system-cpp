@@ -38,7 +38,7 @@ using namespace std;
 
         cout << GREEN << "  [OK] Registration Successful! Welcome, " << name << "!\n" << RESET;
     }
-};
+
 
 bool login(string id, string pass, bool &voted, string &voterName) {
     ifstream file("voters.txt");
