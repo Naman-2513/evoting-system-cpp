@@ -4,6 +4,8 @@
 #include "candidate.h"
 #include "utils.h"
 #include <iostream>
+#include<thread>
+#include<chrono>
 #include <fstream>
 #include <iomanip>
 using namespace std;

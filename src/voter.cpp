@@ -2,9 +2,10 @@
 #include "utils.h"
 #include <iostream>
 #include <fstream>
+#include<cstdio>
 using namespace std;
 
-  void registerVoter() {
+  void Voter::registerVoter() {
         cout << "\n  Enter Voter ID   : ";
         cin >> voterID;
 
