@@ -54,7 +54,7 @@ void printBanner() {
     cout << RESET << "\n";
 }
 
-void printDivider(string title = "") {
+void printDivider(string title) {
     if (title.empty()) {
         cout << CYAN << "  ----------------------------------------\n" << RESET;
     } else {
