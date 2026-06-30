@@ -1,0 +1,41 @@
+# E-Voting System (C++)
+
+A console-based Electronic Voting System built in C++ using file handling for persistent storage of candidates, voters, and votes.
+
+## Features
+- Voter registration and secure login
+- Candidate management (add/remove/view)
+- Encrypted vote casting
+- Admin panel for results and vote management
+- Colorful console UI with loading animations
+
+## Tech Stack
+- Language: C++
+- Storage: File handling (no external database)
+
+## Project Structure
+
+evoting-system-cpp/
+├── main.cpp
+├── candidate.h / candidate.cpp
+├── voter.h / voter.cpp
+├── vote.h / vote.cpp
+├── utils.h / utils.cpp
+
+## How to Build & Run
+```bash
+g++ main.cpp candidate.cpp voter.cpp vote.cpp utils.cpp -o evoting
+./evoting
+```
+
+## How to Use
+1. Register as a voter
+2. Login with your Voter ID and password
+3. Cast your vote for a candidate
+4. Admin can view results via the Admin Panel
+
+## Team
+See [CONTRIBUTORS.md](CONTRIBUTORS.md)
+
+## License
+This project is licensed under the MIT License — see [LICENSE](LICENSE).
