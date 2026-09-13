@@ -1,6 +1,7 @@
 #include "voter.h"
 #include "utils.h"
 #include <iostream>
+#include<limits>
 #include <fstream>
 #include<cstdio>
 using namespace std;
@@ -22,7 +23,8 @@ using namespace std;
         check.close();
 
         cout << "  Enter Name       : ";
-        cin >> name;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        getline(cin,name);
         cout << "  Create Password  : ";
         cin >> password;
 
