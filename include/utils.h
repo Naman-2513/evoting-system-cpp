@@ -21,5 +21,6 @@ void loading(string message);
 void winnerAnimation(string name);
 void printBanner();
 void printDivider(string title = "");
-
+string encodeName(const string &s);
+string decodeName(const string &s);
 #endif
