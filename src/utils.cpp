@@ -61,3 +61,14 @@ void printDivider(string title) {
         cout << CYAN << "\n  --- " << title << " ---\n" << RESET;
     }
 }
+string encodeName(const string &s){
+    string out = s;
+    for(char &c : out) if (c== ' ') c ='_';
+    return out;
+}
+
+string decodeName(const string &s){
+    string out = s;
+    for(char &c : out) if (c=='_') c=' ';
+    return out;
+}

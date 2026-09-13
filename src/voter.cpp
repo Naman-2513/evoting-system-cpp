@@ -36,7 +36,7 @@ using namespace std;
         hasVoted = false;
 
         ofstream file("voters.txt", ios::app);
-        file << voterID << " " << name << " " << password << " " << hasVoted << "\n";
+        file << voterID << " " << encodeName(name) << " " << password << " " << hasVoted << "\n";
         file.close();
 
         cout << GREEN << "  [OK] Registration Successful! Welcome, " << name << "!\n" << RESET;
@@ -51,7 +51,7 @@ bool login(string id, string pass, bool &voted, string &voterName) {
         if (vid == id) {
             if (password == pass) {
                 voted = hasVoted;
-                voterName = name;
+                voterName = decodeName(name);
                 file.close();
                 return true;
             } else {
@@ -90,7 +90,7 @@ void searchVoter() {
     while (file >> vid >> name >> password >> voted) {
         if (vid == id) {
             cout << GREEN << "\n  Found Voter:\n" << RESET;
-            cout << "  Name   : " << BOLD << name << RESET << "\n";
+            cout << "  Name   : " << BOLD << decodeName(name) << RESET << "\n";
             cout << "  ID     : " << vid << "\n";
             cout << "  Voted  : " << (voted ? GREEN "Yes" RESET : YELLOW "No" RESET) << "\n";
             return;
