@@ -4,9 +4,16 @@
 #include "admin.h"      
 #include "utils.h"
 #include <iostream>
+#ifdef _WIN32
+#define WIN32_LEAN_AND_MEAN
+#include<windows.h>
+#endif
 using namespace std;
 
 int main() {
+#ifdef _WIN32
+    SetConsoleOutputCP(CP_UTF8);
+#endif
     loadCandidates();
     printBanner();
 
