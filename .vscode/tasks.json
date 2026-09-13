@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build evoting-system",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-Iinclude",
+                "src/admin.cpp",
+                "src/candidate.cpp",
+                "src/encryption.cpp",
+                "src/main.cpp",
+                "src/utils.cpp",
+                "src/vote.cpp",
+                "src/voter.cpp",
+                "-o",
+                "evoting.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
