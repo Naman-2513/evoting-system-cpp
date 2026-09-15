@@ -48,7 +48,7 @@ void printBanner() {
     cout << CYAN << BOLD;
     cout << "\n";
     cout << "  ╔══════════════════════════════════════╗\n";
-    cout << "  ║      ELECTION VOTING SYSTEM v2.0     ║\n";
+    cout << "  ║      ELECTION VOTING SYSTEM v1.0     ║\n";
     cout << "  ║         Secure Digital Ballot        ║\n";
     cout << "  ╚══════════════════════════════════════╝\n";
     cout << RESET << "\n";
